@@ -1,0 +1,27 @@
+{
+  "name": "telekinetic-strike",
+  "version": "0.0.1",
+  "description": "A high level API for programming complex Telegram bots",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Aliaksei Nikipelau",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./dist/ && yarn run tsc",
+    "test": "node -r ts-node/register --test test/*",
+    "coverage": "c8 node --test"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "rxjs": "^7.8.1",
+    "telegraf": "^4.12.2",
+    "xstate": "^4.38.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.195",
+    "@types/node": "^20.4.1",
+    "c8": "^8.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules
+legacy
+examples
+dist
+coverage
+.vscode
+.DS_Store
